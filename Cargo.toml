@@ -1,0 +1,16 @@
+[package]
+name = "w32die"
+version = "0.1.0-alpha.1"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/bukowa/win32die"
+homepage = "https://github.com/bukowa/win32die"
+license = "MIT"
+keywords = ["windows", "job", "process", "management", "kill"]
+description = """
+A simple binary that wraps any executable and runs
+it in a Windows Job Object to ensure it (and all its children)
+are terminated when the parent process dies.
+"""
+[dependencies]
+win32job = "=2.0.0"
